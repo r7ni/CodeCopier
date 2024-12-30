@@ -17,7 +17,7 @@ This is useful for creating a backup of your code or for sharing it online with 
 ## Requirements
 
 - **Python**  
-- **(`os` library)**
+- **`os` library (built in)**
 
 ---
 
@@ -44,19 +44,19 @@ After selecting items, the script will generate a file named **`writtencode.txt`
 ## File/Directory Selection Examples
 
 1. **All items**  
-   - Input: `0`  
+   - Your input: `0`  
    - Outcome: All listed items are copied.
 
 2. **Multiple single picks**  
-   - Input: `1 3 5`  
+   - Your input: `1 3 5`  
    - Outcome: Items #1, #3, #5 are copied.
 
 3. **Ranges**  
-   - Input: `1to4`  
+   - Your input: `1to4`  
    - Outcome: Items #1, #2, #3, #4 are copied.
 
 4. **Mixed**  
-   - Input: `2to4 6`  
+   - Your input: `2to4 6`  
    - Outcome: Items #2, #3, #4, #6 are copied.
 
 ---
