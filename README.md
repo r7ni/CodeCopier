@@ -1,4 +1,4 @@
-# Directory Content Exporter
+# Code Copier (Copy your code!)
 
 Ever wanted to simply copy the codes in your file to share them or get help? Me too bro, me too.
 This python script allows you to copy all the code in your files to a copyable text file. 
