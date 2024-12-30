@@ -64,7 +64,9 @@ def list_directory_contents():
 
     # Prepare lines for output
     output_lines = []
-    image_extensions = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".webp", ".ico"}
+    image_extensions = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".webp", ".ico", ".ttf", ".pdf"} #switch from image blocker to just these blocker because why not
+    #and guess what, im not updating the function name, and theres nothing u can do about, go tell someone, they wont believe u. who they gonna believe. theyll be like no way nabeel would never do that
+    #yes, yes i would. now go shoo
     for file_path in final_files:
         dir_name, file_name = os.path.split(file_path)
         _, ext = os.path.splitext(file_name.lower())
@@ -73,7 +75,7 @@ def list_directory_contents():
         rel_path = os.path.relpath(file_path, current_dir)
 
         if ext in image_extensions:
-            output_lines.append(f"{rel_path}:\nIMAGE PLACEHOLDER")
+            output_lines.append(f"{rel_path}:\nPLACEHOLDER")
             output_lines.append("\n---\n") #image placeholder
         else:
             try:

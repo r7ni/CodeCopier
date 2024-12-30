@@ -7,7 +7,7 @@ This is useful for creating a backup of your code or for sharing it online with 
 1. List all items (files & subdirectories) in the current directory.  
 2. Prompt the user to select items required.  
 3. Recursively read files and then export their contents into a single output file.  
-4. Mark image files with the text `IMAGE` instead of dumping their binary data.  
+4. Mark image files that aren't code with placeholder.  
 5. Recursively handle subdir if theya re in the selection.
 6. Avoid copying itself (*the python script*) and the final export file (`writtencode.txt`) back into the output.
 
