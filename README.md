@@ -7,7 +7,7 @@ This is useful for creating a backup of your code or for sharing it online with 
 1. List all items (files & subdirectories) in the current directory.  
 2. Prompt the user to select items required.  
 3. Recursively read files and then export their contents into a single output file.  
-4. Mark image files that aren't code with placeholder.  
+4. Mark files that aren't code, *such as PDF files, Font files, Header files etc*, with a placeholder that people can understand.  
 5. Recursively handle subdir if theya re in the selection.
 6. Avoid copying itself (*the python script*) and the final export file (`writtencode.txt`) back into the output.
 
@@ -67,3 +67,4 @@ After selecting items, the script will generate a file named **`writtencode.txt`
 2. You can easily change the name of the output file `writtencode.txt` in the first few lines of the program.
 3. This script is designed to work without any libraries needed. You may add additional libraries to automatically copy the code to your clipboard.
 However, I decided against this as that would increase the complexity for newer users who may find this program helpful.
+4. If there any file extensions you wish to add to the placeholders you can message me at GitHub: r7ni.
