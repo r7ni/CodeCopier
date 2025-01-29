@@ -64,7 +64,24 @@ def list_directory_contents():
 
     # Prepare lines for output
     output_lines = []
-    image_extensions = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".webp", ".ico", ".ttf", ".pdf", ".o", ".otf"} # ADDED .o HERE
+    image_extensions = {
+    ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".webp", ".ico",
+    ".ttf", ".pdf", ".o", ".otf",   # fonts and other files
+    ".exe", ".dll", ".so", ".a", ".lib",   # compiled / library files
+    ".zip", ".rar", ".7z", ".tar", ".gz",  # archives
+    ".mp3", ".wav", ".ogg", ".flac",       # audio
+    ".mp4", ".avi", ".mov", ".mkv",        # video
+    ".pyc", ".pyo", ".class", ".jar", ".war", ".bin",  # other binaries
+    ".webm", ".m4a", ".mpg", ".mpeg",
+    ".iso", ".img", ".dmg",  
+    ".psd", ".ai", ".eps", 
+    ".svg", ".xcf",  
+    ".cr2", ".nef",  
+    ".arj", ".xz",  
+    ".swf", ".fla", 
+    ".apk", ".ipa",   
+    ".dat", ".bak"   
+    } # Add placeholders here boys (and gals ig)
     #and guess what, im not updating the function name, and theres nothing u can do about, go tell someone, they wont believe u. who they gonna believe. theyll be like no way nabeel would never do that
     #yes, yes i would. now go shoo
     for file_path in final_files:
