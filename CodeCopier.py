@@ -42,8 +42,13 @@ def list_directory_contents():
         item_type = "DIR" if item["is_dir"] else "FILE"
         print(f"{i}. [{item_type}] {item['name']}")
     print("0. All items")
+    print("X. Exit Program:(")
+
 
     choice_str = input("\nEnter your choice ('0' for all, '1 2' for 1 and 2, '1to3' for 1->3, '1to3 5' 1->3 and 5): ").strip()
+    if choice_str.lower() == "x":  # Added option to exit if user inputs 'x'
+        print("Exiting...")
+        return
 
     selected_indices = parse_selection_indices(choice_str, len(items))
     if not selected_indices:
