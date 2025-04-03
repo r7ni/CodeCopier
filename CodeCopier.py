@@ -99,9 +99,9 @@ def list_directory_contents():
         if ext in image_extensions:
             output_lines.append(f"{rel_path}:\nPLACEHOLDER")
             output_lines.append("\n---\n") #image placeholder
-        elif ext == ".h":  # PLACEHOLDER FOR .h
-            output_lines.append(f"{rel_path}:\n({os.path.splitext(file_name)[0]}).h file")
-            output_lines.append("\n---\n")
+#        elif ext == ".h":  # PLACEHOLDER FOR .h
+#            output_lines.append(f"{rel_path}:\n({os.path.splitext(file_name)[0]}).h file")
+#            output_lines.append("\n---\n")
         else:
             try:
                 with open(file_path, 'r', errors='ignore') as f:
